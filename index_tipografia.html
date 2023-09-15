@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto My Components</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="menu__nav">
+            <a href="#" class="img_out">
+                <img id="perfil_img" src="/imagens/IMG_minha_foto2.jpg" alt="imagem de perfil">
+            </a>
+            <ul class="menu-hover">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index_tipografia.html">Tipográfia</a></li>
+                <li><a href="index_cards.html">Cards</a></li>
+                <li><a href="index_listas.html">Listas</a></li>
+                <li><a href="index_formulario.html">Formulário</a></li>
+                <li><a href="index_botoes.html">Botões</a></li>
+                <li><a href="index_tabelas.html">Tabelas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <h1>My Components</h1>
+        
+        <article class="highlight">
+            <h2>Tipográfia</h2>
+            <p>
+                A Tipografia transmite nossas definições de tamanhos e espaçamento e deve ser utilizada respeitando a
+                hierarquia dos elementos na interface
+            </p>
+        </article>
+
+        <section>
+            <h3>Elementos</h3>
+            <article>
+                <h4>Textos</h4>
+                <p>Este texto está escrito em: <b>negrito</b>; e este texto é um: <strong>texto forte</strong>.</p>
+                <p>Este texto está em: <i>itálico</i>; e este texto está: <em>com ênfase</em>.</p>
+                <p>Isto é um texto: <u class="underline">sublinhado</u> ; e isto é um <a href="#">link</a>.</p>
+                <p>
+                    <strong>Tags utilizadas:</strong>
+                    <ul>
+                        <li> b = Negrito</li>
+                        <li> strong = negrito semântico </li>
+                        <li> i = Itálico</li>
+                        <li> em = itálico semântico </li>
+                        <li> u = sublinhado</li>
+                        <li> a = link</li>
+                    </ul>
+                </p>
+            </article>
+            <article>
+                <h4>Sobrescrito e subscrito</h4>
+                <p><strong>Tags:</strong> 
+                <ul>
+                    <li>&lt;sup&gt; = ele eleva um número ou texto.
+                        <p>3<sup>2</sup>= 9</p>
+                        <p>Este é um exemplo de texto <sup>elevado</sup></p>
+                    </li>
+                    <li>&lt;sub&gt; = sobrepõe números ou textos.
+                        <p>A fórmula da água é H<sub>2</sub>O</p>
+                        <p>Lorem ipsum <sub>dolor</sub></p>
+
+                    </li>
+                </ul>
+            </p>
+            </article>
+
+            <article>
+                <h4>Abreviações</h4>
+                <p>
+                    <strong>Tags:</strong>
+                    <ul>
+                        <li>&lt;abbr&gt;</li>
+                        <li>&lt;dfn&gt;</li>
+                    </ul>
+                </p>
+                <p></p>
+                <p>Para criar páginas na web, precisamos aprender <a href="#html"><abbr title="Hyper Text Markup Language">HTML</abbr></a></p>
+                <p>O <dfn id="html"><abbr title="Hyper Text Markup Language">HTML</abbr></dfn> é a principal linguagem da web em que podemos incluir nosso conteúdo de forma semântoca</p>
+
+            </article>
+
+            <article>
+                <h4>Citações</h4>
+                <p>&lt;blockquote&gt;</p>
+                <blockquote>
+                    <p>O ruim não é ter trabalho. O ruim é ter de trabalhar</p>
+                    <cite>Seu Madruga</cite>
+                </blockquote>
+                <blockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote">
+                    The &lt;blockquote&gt; HTML element indicates that the enclosed text is an extended quotation.
+                    <cite>MDN</cite>
+                </blockquote>
+
+                <p>&lt;q&gt;</p>
+                <p>The &lt;q&gt; HTML element indicates that the enclosed text is a short inline quotation
+                    <cite>MDN</cite>
+                </p>
+                <p>Segundo <cite>Sun Tzu</cite> <q>As oportunidades multiplicam-se à medida que são agarradas</q></p>
+
+                <p>&lt;cite&gt;</p>
+                <p>The &lt;cite&gt; HTML element is used to mark up the title of a cited creative work</p>
+                <p> O <cite>Death Note</cite> é um anime centrado em Light Yagami, estudante que descobre um caderno sobrenatural</p>
+            </article>
+            <article>
+                <h4>Computação</h4>
+                <p>&lt;code&gt;</p>
+                <p>serve para, justamente, marcar um conteúdo como um trecho de
+                    código, por exemplo, de uma linguagem de programação.</p>
+                <p>A propriedade <code>Background</code> do <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS"><dfn><abbr title="Cascading Style Sheets">CSS</abbr></dfn></a> serve para colocar uma imagem ou cor de fundo</p>
+
+                <p>&lt;pre&gt;</p>
+                <p>Essa tag serve pra colocar texto pré formatado</p>
+                <pre>
+                    Ex:
+                    Este texto é um texto pré formatado
+                    
+                    Ex:
+                    <code>
+                        #perfil_img{
+                        max-width: 10rem;
+                        height: 100px;
+                        border-radius: 50%;
+                        outline: 2px solid var(--primary-color);
+                        }
+                    </code>
+                </pre>
+
+                <p>&lt;samp&gt;</p>
+                <p>O elemento HTML &lt;samp&gt; é usado para incluir texto embutido que representa uma amostra (ou entre aspas) de saída de um programa de computador.</p>
+                <p>
+                    Após executar o método <code>pish()</code> obtive p retorno <samp lang="en-US">undefined has not a push() function</samp>
+                </p>
+                <p>&lt;kbd&gt;</p>
+                <p>representa uma extensão de texto embutido que denota a entrada textual do usuário a partir de um teclado, entrada de voz ou qualquer outro dispositivo de entrada de texto</p>
+                <p>Pressione as teclas <kbd>CTRL</kbd> + <kbd>C</kbd> para copiar</p>
+            </article>
+
+            <article>
+                <h4>Datas e horários</h4>
+                <p><strong>Tags:</strong></p>
+                <ul>
+                    <li>&lt;time&gt;</li>
+                    <li>datetime: atributo do <b>time</b></li>
+                </ul>
+                <code>
+                    &lt;time datetime="1999-12-04"&gt; 04 de Dezembro de 1999 &lt;time&gt;
+                </code>
+                <p>Eu nasci em <time datetime="1999-12-04">04 de Dezembro de 1999</time></p>
+
+                <h5>&lt;del&gt; e &lt;ins&gt;</h5>
+                <p>&lt;del&gt; representa um intervalo de texto que foi excluído de um documento. <cite><a lang="en-US" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del">MDN</a></cite></p>
+                <p>&lt;ins&gt; representa um intervalo de texto que foi adicionado a um documento. <cite><a lang="en-US" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins">MDN</a></cite></p>
+                <p>A festa de 24 anos ocorrerá no dia <time datetime="2023-12-04">04/12/2023</time></p>
+                
+                <p>A festa de 24 anos ocorrerá no dia <del>04/12/2023</del>,  <ins><time datetime="2023-12-09">09/12/2023</time></ins></p>
+            </article>
+        </section>
+    
+    </main>
+</body>
+</html>

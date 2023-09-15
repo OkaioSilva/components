@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto My Components</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="menu__nav">
+            <a href="#" class="img_out">
+                <img id="perfil_img" src="/imagens/IMG_minha_foto2.jpg" alt="imagem de perfil">
+            </a>
+            <ul class="menu-hover">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index_tipografia.html">Tipográfia</a></li>
+                <li><a href="index_cards.html">Cards</a></li>
+                <li><a href="index_listas.html">Listas</a></li>
+                <li><a href="index_formulario.html">Formulário</a></li>
+                <li><a href="index_botoes.html">Botões</a></li>
+                <li><a href="index_tabelas.html">Tabelas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <h1>My Components</h1>
+        <section class="section">
+            <h2>Entre em Contato</h2>
+            <div class="row">
+                <form action="">
+                    <div class="row">
+                        <div>
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" placeholder="nome completo">
+                        </div>
+                        <div>
+                            
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="example@.com" autocapitalize="off">
+                        </div>
+                    </div>
+                    <label for="mensagem">Digite sua mensagem</label>
+                    <textarea name="mensagem" id="mensagem" rows="6"></textarea>
+                    <input type="submit" value="Enviar" class="btn">
+                </form>
+                <address>
+                    <p><b>Endereço</b>
+                        R. Moraes Moreira, 1 - Paciência, Rio de Janeiro - RJ, 23570-600
+                    </p>
+                    <p><b>Telefone:</b> 21 979690288</p>
+                    <p><b>Email:</b> Souza_kaio@hotmail.com</p>
+                </address>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Quiz</h2>
+            <form action="" class="form_quiz">
+                <label for="tecnologia">Qual é a sua linguagem preferida?</label>
+                <select name="tecnologia" id="tecnologia">
+                    <option value="null"> Selecione</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JavaScript</option>
+                </select>
+                
+                <label>Alta Prioridade <input type="radio" name="prioridade" value="alta"></label>
+                <label>Média Prioridade <input type="radio" name="prioridade" value="media"></label>
+                <label>Baixa Prioridade <input type="radio" name="prioridade" value="baixa"></label>
+
+                <label> <input type="checkbox" name="copy" value="true"> Envie-me uma cópia</label>
+                <label> <input type="checkbox" name="humano" value="true"> Sou humano</label>
+
+                <div class="row">
+                    <input type="reset" value="Limpar" class="btn_limpar">
+                    <input type="submit" value="Enviar" class="btn">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
